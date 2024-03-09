@@ -17,14 +17,14 @@
         }
         #giftBox {
             width: 175px;
-            height: 150px;
+            height: 125px;
             background: url('/mnt/data/Create_an_image_of_a_Christmas_gift_box,colorful.png') no-repeat center center; /* Update this path */
             background-size: cover;
             cursor: pointer;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        #birthdayMessage, #personImage, #narutoImage {
+        #birthdayMessage, #personImage {
             display: none;
             text-align: center;
             margin-top: 20px;
@@ -34,15 +34,20 @@
             height: auto;
         }
         #narutoImage{
-            max: width 350px;
-            height: 150%;
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            width: 175px;
+            height: 200px;
+
         }
+       
     </style>
 </head>
 <body>
 
 <div id="giftBox">
-    <img src="https://pp0684.github.io/happy-birthday/pavan.jpg" alt="giftBox">
+    <img src="data:image/jpeg;base64,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" alt="giftBox">
 <h4>Open the gift box brimming with the surprises you've been eagerly anticipating... </h4>
 <h4>But be prepared, for the reality may not hold the thrilling wonders you expect. It's a journey between hope and what truly unfolds.</h4>
 </div>
@@ -56,7 +61,7 @@
     <h2>Happy Birthday From Naruto</h2>
 </div>
 <div id="narutoImage">
-    <img src=""https://pp0684.github.io/happy-birthday/naruto 4.jpeg" alt="Naruto Greeting" style="max-width: 80%; height: auto;"> <!-- Replace with the actual Naruto image URL -->
+    <img src="https://w0.peakpx.com/wallpaper/997/588/HD-wallpaper-naruto-handsome-body-boruto-boss-business-gentleman-hinata-hunk-ino-jiraiya-jutsu-sakura-sarada-sasuke-sharingan-suit-tsunade.jpg" alt="Naruto Greeting" style="max-width: 80%; height: auto;"> <!-- Replace with the actual Naruto image URL -->
 </div>
 
 <script>
