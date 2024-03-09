@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Surprise</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #A5DD9B;
+        }
+        #giftBox {
+            width: 175px;
+            height: 150px;
+            background: url('/mnt/data/Create_an_image_of_a_Christmas_gift_box,colorful.png') no-repeat center center; /* Update this path */
+            background-size: cover;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        #birthdayMessage, #personImage, #narutoImage {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%; 
+            height: auto;
+        }
+        #narutoImage{
+            max: width 350px;
+            height: 150%;
+        }
+    </style>
+</head>
+<body>
+
+<div id="giftBox">
+    <img src="../pavan.jpg" alt="giftBox">
+<h4>Open the gift box brimming with the surprises you've been eagerly anticipating... </h4>
+<h4>But be prepared, for the reality may not hold the thrilling wonders you expect. It's a journey between hope and what truly unfolds.</h4>
+</div>
+
+
+<div id="birthdayMessage">
+    <h1>Happy Birthday, Snehitha</h1> <!-- Replace [Her Name] with her actual name -->
+    <p>Wishing you all the joy and happiness in the world!</p>
+    <p> I like the way how you give the importance to friends...I like the way how you understands me in critical situation..... Thank you for being good friend of me......</p>
+    <h3>Wish you many more happy returns of the day</h3>
+    <h2>Happy Birthday From Naruto</h2>
+</div>
+<div id="narutoImage">
+    <img src="../naruto 4.jpeg" alt="Naruto Greeting" style="max-width: 80%; height: auto;"> <!-- Replace with the actual Naruto image URL -->
+</div>
+
+<script>
+    document.getElementById('giftBox').addEventListener('click', function() {
+        this.style.display = 'none'; // Hide the gift box
+
+        // Display the birthday message below the image without hiding the photo
+        document.getElementById('birthdayMessage').style.display = 'block';
+        
+        // Display the Naruto image below the birthday message
+        document.getElementById('narutoImage').style.display = 'block';
+    });
+</script>
+
+</body>
+</html>
